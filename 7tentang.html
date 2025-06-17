@@ -1,16 +1,93 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banjar Kita</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        body {
+            font-family: 'Poppins';
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+        }
+
+        .card-container {
+            text-align: center;
+            padding: 50px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            color: rgb(0, 0, 0);
+        }
+
+        .ig {
+            justify-content: center;
+            display: flex;
+            width: 40px;
+            display: inline-flex;
+            color: rgb(0, 0, 0);
+        }
+
+        h1 {
+
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            -webkit-text-stroke: 1px black;
+        }
+
+
+        button,
+        a.kembali {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 4px;
+            margin: 5px;
+            flex-direction: column;
+            display: flex;
+            text-align: center;
+
+        }
+
+        .kembali {
+            background: #007bff;
+        }
+
+        button:hover,
+        a.kembali:hover {
+            opacity: 0.8;
+        }
+
+        .card-container img {
+            text-align: justify;
+            max-width: 70%;
+            size-adjust: 30px;
+            border-radius: 100px;
+
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                display: grid;
+            }
+
+
+        }
+    </style>
 </head>
 
 <body>
@@ -45,42 +122,27 @@
             </li>
         </ul>
     </nav>
-
-
-    <main>
-        <h1> Tentang Kami </h1>
-        <section class="team-section">
-            <div class="card">
-                <img src="foto1.jpg" alt="Muhammad Jainuddin" class="profile-img">
-                <h3>Muhammad Jainuddin</h3>
-                <p>Tampan, dingin, ceria, suka menjaili, dan sudah punya pacar.</p>
-                <a href="https://instagram.com/username1" target="_blank" class="ig-link">
-                    <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram Icon"> Instagram
-                </a>
-            </div>
-            <div class="card">
-                <img src="foto2.jpg" alt="Sarikin Thobin" class="profile-img">
-                <h3>Sarikin Thobin</h3>
-                <p>Tampan, dingin, ceria, suka menabung, dan Raja Iblis.</p>
-                <a href="https://instagram.com/username2" target="_blank" class="ig-link">
-                    <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram Icon"> Instagram
-                </a>
-            </div>
-            <div class="card">
-                <img src="foto3.jpg" alt="Ryan Candra Bachtiar" class="profile-img">
-                <h3>Ryan Candra Bachtiar</h3>
-                <p>Tampan, dingin, pendiam, dan Raja wanita.</p>
-                <a href="https://instagram.com/username3" target="_blank" class="ig-link">
-                    <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram Icon"> Instagram
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-
-
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="card-container">
+            <img src="WhatsApp Image 2025-06-17 at 21.46.36_60e3b537.jpg" alt="">
+            <h3 id="card-name">Muhammad Rafli</h3>
+            <p id="card-info">Tampan,dingin, ceria, suka menjaili, dan Sudah punya pacar.</p>
+            <a href="https://www.instagram.com/rapli02._/?utm_source=ig_web_button_share_sheet" class="ig"><img
+                    src="th (3).jpg" alt="" class="ig">Instagram</a>
+        </div>
+        <div class="card-container">
+            <img src="WhatsApp Image 2025-06-17 at 22.28.30_5289e134.jpg" alt="">
+            <h3 id="card-name">Sarikin Thobin</h3>
+            <p id="card-info">Tampan, dingin, ceria, suka menabung , dan Raja Iblis.</p>
+            <a href="https://www.instagram.com/srkntbn_/" class="ig"><img src="th (3).jpg" alt="">Instagram</a>
+        </div>
+        <div class="card-container">
+            <img src="WhatsApp Image 2025-06-17 at 21.50.00_3e78a854.jpg" alt="">
+            <h3 id="card-name">Muhammad Mubarak Ramadhani</h3>
+            <p id="card-info">Tampan, dingin, pendiam, dan Raja wanita.</p>
+            <a href="https://www.instagram.com/yancndra/" class="ig"><img src="th (3).jpg" alt="">Instagram</a>
+        </div>
+    </div>
 </body>
 
 </html>
