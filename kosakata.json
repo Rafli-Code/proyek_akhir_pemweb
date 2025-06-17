@@ -1,0 +1,188 @@
+{"A": [
+    { "banjar": "Abah", "indonesia": "Ayah" },
+    { "banjar": "Ading", "indonesia": "Adik" },
+    { "banjar": "Acil", "indonesia": "Bibi, tante" },
+    { "banjar": "Anak", "indonesia": "Anak" },
+    { "banjar": "Amun", "indonesia": "Jika, kalau" },
+    { "banjar": "Abut", "indonesia": "Ribut" },
+    { "banjar": "Ambin", "indonesia": "Teras" },
+    { "banjar": "Amun", "indonesia": "Kalau" },
+    { "banjar": "Anum", "indonesia": "Muda" },
+    { "banjar": "Andak", "indonesia": "Letak, taruh" }
+  ],
+  "B": [
+    { "banjar": "Banyu", "indonesia": "Air" },
+    { "banjar": "Bulik", "indonesia": "Pulang" },
+    { "banjar": "Babasuh", "indonesia": "Membasuh, mencuci" },
+    { "banjar": "Bini", "indonesia": "Istri" },
+    { "banjar": "Bagawi", "indonesia": "Bekerja" },
+    { "banjar": "Bajalan", "indonesia": "Berjalan" },
+    { "banjar": "Bungas", "indonesia": "Cantik" }
+  ],
+  "C": [
+    { "banjar": "Cagat", "indonesia": "Tegak" },
+    { "banjar": "Cacat", "indonesia": "Kurang sempurna" },
+    { "banjar": "Cangkir", "indonesia": "Gelas" },
+    { "banjar": "Cuba", "indonesia": "Coba" }
+  ],
+  "D": [
+    { "banjar": "Duduk", "indonesia": "Duduk" },
+    { "banjar": "Duit", "indonesia": "Uang" },
+    { "banjar": "Dikit", "indonesia": "Sedikit" },
+    { "banjar": "Dangar", "indonesia": "Dengar" },
+    { "banjar": "Dungkung", "indonesia": "Jongkok" },
+    { "banjar": "Dulak", "indonesia": "Bosan" },
+    { "banjar": "Dangani", "indonesia": "Temani" },
+    { "banjar": "Dingsanak", "indonesia": "Saudara" },
+    { "banjar": "Daras", "indonesia": "Deras" }
+  ],
+  "E": [
+    { "banjar": "Engken", "indonesia": "Pelit" },
+    { "banjar": "Elang", "indonesia": "Kunjung" }
+  ],
+  "F": [],
+  "G": [
+    { "banjar": "Ganal", "indonesia": "Besar" },
+    { "banjar": "Gawi", "indonesia": "Kerja" },
+    { "banjar": "Guring", "indonesia": "Tidur" },
+    { "banjar": "Garing", "indonesia": "Sakit" },
+    { "banjar": "Gaduh", "indonesia": "Pelihara" },
+    { "banjar": "Gamat", "indonesia": "Lambat" },
+    { "banjar": "Gampang", "indonesia": "Mudah" }
+  ],
+  "H": [
+    { "banjar": "Handak", "indonesia": "Ingin" },
+    { "banjar": "Habar", "indonesia": "Kabar, berita" },
+    { "banjar": "Halat", "indonesia": "Batas" },
+    { "banjar": "Hampa", "indonesia": "Kosong" },
+    { "banjar": "Halus", "indonesia": "Kecil" },
+    { "banjar": "Handap", "indonesia": "Pendek" },
+    { "banjar": "Hapak", "indonesia": "Apek" },
+    { "banjar": "Hancing", "indonesia": "Pesing" },
+    { "banjar": "Himung", "indonesia": "Bahagia" },
+    { "banjar": "Hibak", "indonesia": "Penuh" }
+  ],
+  "I": [
+    { "banjar": "Ikam", "indonesia": "Kamu" },
+    { "banjar": "Isuk", "indonesia": "Besok" },
+    { "banjar": "Imbah", "indonesia": "Setelah" },
+    { "banjar": "Iwak", "indonesia": "Ikan" },
+    { "banjar": "Igut", "indonesia": "Gigit" }
+  ],
+  "J": [
+    { "banjar": "Jabuk", "indonesia": "Lapuk" },
+    { "banjar": "Jajak", "indonesia": "Injak" },
+    { "banjar": "Jajal", "indonesia": "Penuh sesak" },
+    { "banjar": "Jangkit", "indonesia": "Menular" },
+    { "banjar": "Japai", "indonesia": "Sentuh" }
+  ],
+  "K": [
+    { "banjar": "Kada", "indonesia": "Tidak" },
+    { "banjar": "Kadap", "indonesia": "Gelap" },
+    { "banjar": "Kai", "indonesia": "Kakek" },
+    { "banjar": "Kawan", "indonesia": "Teman" },
+    { "banjar": "Kabar", "indonesia": "Berita" }
+  ],
+  "L": [
+    { "banjar": "Larang", "indonesia": "Mahal" },
+    { "banjar": "Labih", "indonesia": "Lebih" },
+    { "banjar": "Laju", "indonesia": "Cepat" },
+    { "banjar": "Lapah", "indonesia": "Lelah" },
+    { "banjar": "Lading", "indonesia": "Pisau" },
+    { "banjar": "Landap", "indonesia": "Tajam" },
+    { "banjar": "Lamah", "indonesia": "Lemah" },
+    { "banjar": "Landu", "indonesia": "Kendur" }, 
+    { "banjar": "Lawang", "indonesia": "Pintu" },
+    { "banjar": "Lawas", "indonesia": "Lama" }
+  ],
+  "M": [
+    { "banjar": "Mamak", "indonesia": "Masak" },
+    { "banjar": "Mahahar", "indonesia": "Meraba" },
+    { "banjar": "Mantah", "indonesia": "Belum matang" },
+    { "banjar": "Minantu", "indonesia": "Menantu" },
+    { "banjar": "Mintuha", "indonesia": "Mertua" },
+    { "banjar": "Muntung", "indonesia": "Mulut" }
+  ],
+  "N": [
+    { "banjar": "Nang", "indonesia": "Yang" },
+    { "banjar": "Napa", "indonesia": "Kenapa" },
+    { "banjar": "Nyaman", "indonesia": "Enak" },
+    { "banjar": "Nini", "indonesia": "Nenek" },
+    { "banjar": "Nahap", "indonesia": "Tegap, tegar" }
+  ],
+  "O": [
+    { "banjar": "Olah", "indonesia": "Bikin" }
+  ],
+  "P": [
+    { "banjar": "Pian", "indonesia": "Anda" },
+    { "banjar": "Pagat", "indonesia": "Putus" },
+    { "banjar": "Pacul", "indonesia": "Lepas" },
+    { "banjar": "Pahadangan", "indonesia": "Sementara" },
+    { "banjar": "Pamalar", "indonesia": "Pelit" },
+    { "banjar": "Padu", "indonesia": "Dapur" },
+    { "banjar": "Pandir", "indonesia": "Bicara" },
+    { "banjar": "Parak", "indonesia": "Dekat" },
+    { "banjar": "Pusut", "indonesia": "Elus" },
+    { "banjar": "Puruk", "indonesia": "Pakai" }
+  ],
+  "Q": [],
+  "R": [
+    { "banjar": "Rabit", "indonesia": "Robek" },
+    { "banjar": "Ragap", "indonesia": "Peluk" },
+    { "banjar": "Rancak", "indonesia": "Sering" },
+    { "banjar": "Rami", "indonesia": "Seru" },
+    { "banjar": "Rakat", "indonesia": "Rukun" },
+    { "banjar": "Ranjah", "indonesia": "Tabrak" },
+    { "banjar": "Randah", "indonesia": "Rendah" },
+    { "banjar": "Rongkang", "indonesia": "Bolong" },
+    { "banjar": "Rinjing", "indonesia": "Wajan" },
+    { "banjar": "Rigat", "indonesia": "Kotor" }
+  ],
+  "S": [
+    { "banjar": "Salajur", "indonesia": "Sekaligus, sekalian" },
+    { "banjar": "Salawar", "indonesia": "Celana" },
+    { "banjar": "Sawat", "indonesia": "Sempat" },
+    { "banjar": "Sidin", "indonesia": "Beliau" },
+    { "banjar": "Sugih", "indonesia": "Kaya" },
+    { "banjar": "Satumat", "indonesia": "Sebentar" },
+    { "banjar": "Supan", "indonesia": "Malu" },
+    { "banjar": "Surangan", "indonesia": "Sendiri" },
+    { "banjar": "Sangit", "indonesia": "Marah" },
+    { "banjar": "Sasak", "indonesia": "Sesak" }
+  ],
+  "T": [
+    { "banjar": "Tulak", "indonesia": "Pergi" },
+    { "banjar": "Tabang", "indonesia": "Tebang" },
+    { "banjar": "Tabas", "indonesia": "Tebas" },
+    { "banjar": "Taduh", "indonesia": "Teduh" },
+    { "banjar": "Tagapit", "indonesia": "Terjepit" },
+    { "banjar": "Tagur", "indonesia": "Tegur, sapa" },
+    { "banjar": "Taguk", "indonesia": "Telan" },
+    { "banjar": "Tambus", "indonesia": "Tembus" },
+    { "banjar": "Tampulu", "indonesia": "Mumpung" },
+    { "banjar": "Tandar", "indonesia": "Geser" }
+  ],
+  "U": [
+    { "banjar": "Ulun", "indonesia": "Saya" },
+    { "banjar": "Uma", "indonesia": "Ibu" },
+    { "banjar": "Urang", "indonesia": "Orang" },
+    { "banjar": "Ujar", "indonesia": "Katanya" },
+    { "banjar": "Umpat", "indonesia": "Ikut" },
+    { "banjar": "Unjuk", "indonesia": "Beri" },
+    { "banjar": "Urut", "indonesia": "Pijit" },
+    { "banjar": "Uyuh", "indonesia": "Capek" },
+    { "banjar": "Utas", "indonesia": "Cincin" },
+    { "banjar": "Ulut", "indonesia": "Olok" }
+  ],
+  "V": [],
+  "W": [
+    { "banjar": "Wadah", "indonesia": "Tempat" },
+    { "banjar": "Wahin", "indonesia": "Bersin" },
+    { "banjar": "Wadai", "indonesia": "Kue" },
+    { "banjar": "Wani", "indonesia": "Berani" },
+    { "banjar": "Wajar", "indonesia": "Wajar" }
+  ],
+  "X": [],
+  "Y": [],
+  "Z": []
+}

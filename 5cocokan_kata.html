@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banjar Kita</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src=".BanjarKita_Logo.png" alt="Logo Bahasa Banjar">
+            <a href="1beranda.html">Banjar Kita</a>
+        </div>
+
+        <div id="menu-icon" class="menu-icon">
+            <i class="ph ph-list"></i>
+        </div>
+        <ul id="menu-list" class="hidden">
+            <li>
+                <a href="1beranda.html">Beranda</a>
+            </li>
+            <li>
+                <a href="2kosakata.html">Kosakata</a>
+            </li>
+            <li>
+                <a href="3cerita.html">Cerita Rakyat</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" id="gamesToggle">Games ▾</a>
+                <ul class="dropdown-content" id="gamesMenu">
+                    <li><a href="5cocokan_kata.html">Mencocokkan Kata</a></li>
+                    <li><a href="6quiz.html">Kuis</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="7tentang.html">Tentang</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Game Mencocokan Kata<br>Bahasa Banjar - Indonesia</h1>
+
+        <div class="game-container">
+            <div class="instructions">
+                <p><strong>Cara Bermain:</strong> Pilih level kesulitan terlebih dahulu. Kemudian pilih satu kartu
+                    Bahasa Banjar dan satu kartu Bahasa Indonesia yang merupakan pasangan yang tepat. Jika benar, kartu
+                    akan tetap terbuka. Jika salah, kartu akan tertutup kembali. Selesaikan semua pasangan sebelum waktu
+                    habis!</p>
+            </div>
+
+            <div class="level-selector">
+                <button class="level-btn easy" id="easyBtn">Mudah (5 Pasang)<br>Waktu: 2 menit</button>
+                <button class="level-btn medium" id="mediumBtn">Sedang (10 Pasang)<br>Waktu: 3 menit</button>
+                <button class="level-btn hard" id="hardBtn">Sulit (15 Pasang)<br>Waktu: 5 menit</button>
+            </div>
+
+            <div class="score-panel">
+                <div class="score-box">
+                    <div>Pasangan Ditemukan</div>
+                    <div class="score-value" id="matches">0/0</div>
+                </div>
+                <div class="score-box">
+                    <div>Percobaan</div>
+                    <div class="score-value" id="attempts">0</div>
+                </div>
+                <div class="score-box time-box">
+                    <div>Waktu Tersisa</div>
+                    <div class="score-value" id="timer">00:00</div>
+                </div>
+                <div class="score-box">
+                    <div>Akurasi</div>
+                    <div class="score-value" id="accuracy">0%</div>
+                </div>
+            </div>
+
+            <div class="game-board" id="gameBoard"></div>
+
+            <button id="resetBtn" style="display: none;">Mulai Ulang Game</button>
+        </div>
+
+        <div class="result-modal" id="resultModal">
+            <div class="modal-content" id="modalContent">
+                <div class="celebrate" id="celebrateEmoji">🎉</div>
+                <h2 id="resultTitle">Selamat! Anda Menang!</h2>
+                <p id="finalScore"></p>
+                <p id="finalTime"></p>
+                <p id="finalAccuracy"></p>
+                <button id="playAgainBtn">Main Lagi</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>

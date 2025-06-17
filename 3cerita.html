@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banjar Kita</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src=".BanjarKita_Logo.png" alt="Logo Bahasa Banjar">
+            <a href="1beranda.html">Banjar Kita</a>
+        </div>
+
+        <div id="menu-icon" class="menu-icon">
+            <i class="ph ph-list"></i>
+        </div>
+        <ul id="menu-list" class="hidden">
+            <li>
+                <a href="1beranda.html">Beranda</a>
+            </li>
+            <li>
+                <a href="2kosakata.html">Kosakata</a>
+            </li>
+            <li>
+                <a href="3cerita.html">Cerita Rakyat</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" id="gamesToggle">Games ▾</a>
+                <ul class="dropdown-content" id="gamesMenu">
+                    <li><a href="5cocokan_kata.html">Mencocokkan Kata</a></li>
+                    <li><a href="6quiz.html">Kuis</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="7tentang.html">Tentang</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <!--<div id="cerita">
+            <h2>Cerita Rakyat Banjar</h2>
+            <div id="cerita-buttons" class="story-nav"></div>
+            <div id="cerita-content" class="story-content"></div>
+        </div>
+        <div class="utama">-->
+
+        <div class="rekomendasi">
+            <h2>Kumpulan Cerita Rakyat Banjar</h2>
+            <div class="rekomendasi-grid">
+                <div class="rekomendasi1">
+                    <img src="https://cdn.myanimelist.net/images/anime/1015/138006.jpg" alt="Frieren: Beyond Journey's End">
+
+                    <h3> Andaru </h3>
+                    <p>cerita rakyat/folklore </p>
+                    <button onclick="window.open('Andaru.pdf', '_blank')">Lihat PDF</button>
+                    <a href="Andaru.pdf" target="_blank">Mulai Baca</a>
+                </div>
+                <div class="rekomendasi1">
+                    <img src="https://cdn.myanimelist.net/images/anime/1441/122795.jpg" alt="Spy x Family">
+
+                    <h3> Spy x Family </h3>
+                    <p>Genre: Action, Comedy, Shonen, Slice of Life </p>
+                    <a href="LP3_No1(3).html">Lihat Detail</a>
+                </div>
+                <div class="rekomendasi1">
+                    <img src="https://cdn.myanimelist.net/images/anime/1987/117507.jpg" alt="86 Eighty Six">
+
+                    <h3> 86 Eighty Six </h3>
+                    <p>Genre: Action, Drama, Sci-Fi, Mecha </p>
+                    <a href="LP3_No1(4).html">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
