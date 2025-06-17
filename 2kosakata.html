@@ -12,72 +12,85 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
     <style>
-      .kosakata{
-        text-align: center;
-        padding: 50px;
-        background-color: white;
-        color: #1f2937;
-      }
-      .isi-kosakata{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-        padding: 20px;
-      }
-      .isi-kosakata input, select, button{
-        padding: 8px 12px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        font-size: 14px;
-      }
-      .isi-kosakata button{
-        background: orange;
-        color: white;
-        border: none;
-        cursor: pointer;
-      }
-      .isi-kosakata button:hover{
-        background: #ff9012;
-      }
-      .kartu-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 20px;
-        padding: 20px;
-        max-width: 1000px;
-        margin: auto;
-      }
-      .kartu {
-        background-color: #ffffff;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        padding: 16px;
-        text-align: center;
-        transition: transform 0.2s;
-      }
-      .kartu:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.20);
-      }
-      .kartu h4 {
-        margin: 0;
-        font-size: 18px;
-        color: #1f2937;
-      }
-      .kartu p {
-        margin-top: 6px;
-        font-size: 15px;
-        color: #555;
-      }
-      @media (max-width: 600px) {
-        .isi-kosakata {
-          flex-direction: column;
-          align-items: stretch;
+        .kosakata {
+            text-align: center;
+            padding: 50px;
+            background-color: white;
+            color: #1f2937;
         }
-      }
+
+        .isi-kosakata {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .isi-kosakata input,
+        select,
+        button {
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .isi-kosakata button {
+            background: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .isi-kosakata button:hover {
+            background: #ff9012;
+        }
+
+        .kartu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .kartu {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 16px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .kartu:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.20);
+        }
+
+        .kartu h4 {
+            margin: 0;
+            font-size: 18px;
+            color: #1f2937;
+        }
+
+        .kartu p {
+            margin-top: 6px;
+            font-size: 15px;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .isi-kosakata {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
     </style>
 </head>
+
 <body>
     <nav>
         <div class="logo">
@@ -120,39 +133,40 @@
                     <input type="text" id="cari" placeholder="cari kata">
                     <button id="tombolCari">cari</button>
                     <select id="pilih">
-                    <option value="Semua">Semua</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="E">E</option>
-                    <option value="F">F</option>
-                    <option value="G">G</option>
-                    <option value="H">H</option>
-                    <option value="I">I</option>
-                    <option value="J">J</option>
-                    <option value="K">K</option>
-                    <option value="L">L</option>
-                    <option value="M">M</option>
-                    <option value="N">N</option>
-                    <option value="O">O</option>
-                    <option value="P">P</option>
-                    <option value="Q">Q</option>
-                    <option value="R">R</option>
-                    <option value="S">S</option>
-                    <option value="T">T</option>
-                    <option value="U">U</option>
-                    <option value="V">V</option>
-                    <option value="W">W</option>
-                    <option value="X">X</option>
-                    <option value="Y">Y</option>
-                    <option value="Z">Z</option>
+                        <option value="Semua">Semua</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                        <option value="U">U</option>
+                        <option value="V">V</option>
+                        <option value="W">W</option>
+                        <option value="X">X</option>
+                        <option value="Y">Y</option>
+                        <option value="Z">Z</option>
                     </select>
                 </div>
                 <div id="tabelBahasa"></div>
             </div>
         </div>
     </main>
+    <script src="script.js"></script>
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
         import { getDatabase, ref, get, child } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js";
@@ -180,15 +194,15 @@
         function renderKartu(dataArray) {
             let html = "<div class='kartu-container'>";
             if (dataArray.length === 0) {
-            html += "<p>Tidak ditemukan.</p>";
+                html += "<p>Tidak ditemukan.</p>";
             } else {
-            dataArray.forEach(item => {
-                html += `
-                <div class="kartu">
-                    <h4>${item.banjar}</h4>
-                    <p>${item.indonesia}</p>
-                </div>`;
-            });
+                dataArray.forEach(item => {
+                    html += `
+          <div class="kartu">
+            <h4>${item.banjar}</h4>
+            <p>${item.indonesia}</p>
+          </div>`;
+                });
             }
             html += "</div>";
             tabel.innerHTML = html;
@@ -201,14 +215,14 @@
             let hasil = semuaData;
 
             if (huruf !== "Semua") {
-            hasil = hasil.filter(item => item.banjar.charAt(0).toUpperCase() === huruf);
+                hasil = hasil.filter(item => item.banjar.charAt(0).toUpperCase() === huruf);
             }
 
             if (keyword) {
-            hasil = hasil.filter(item =>
-                item.banjar.toLowerCase().includes(keyword) ||
-                item.indonesia.toLowerCase().includes(keyword)
-            );
+                hasil = hasil.filter(item =>
+                    item.banjar.toLowerCase().includes(keyword) ||
+                    item.indonesia.toLowerCase().includes(keyword)
+                );
             }
 
             renderKartu(hasil);
@@ -216,22 +230,24 @@
 
         get(child(dbRef, "/")).then(snapshot => {
             if (snapshot.exists()) {
-            const data = snapshot.val();
-            semuaData = Object.entries(data).flatMap(([abjad, kataObj]) =>
-                Object.entries(kataObj).map(([banjar, indonesia]) => ({
-                banjar,
-                indonesia
-                }))
-            );
+                const data = snapshot.val();
+                semuaData = Object.entries(data)
+                    .filter(([huruf, isi]) => /^[A-Z]$/.test(huruf))
+                    .flatMap(([huruf, kataObj]) =>
+                        Object.entries(kataObj).map(([banjar, indonesia]) => ({
+                            banjar,
+                            indonesia
+                        }))
+                    );
 
-            filterData(); // tampil awal
-            pilih.addEventListener("change", (a) => {
-                cari.value = "" 
-            filterData()
-            });
-            document.getElementById("tombolCari").addEventListener("click", filterData)
+                filterData(); // tampil awal
+                pilih.addEventListener("change", (a) => {
+                    cari.value = ""
+                    filterData()
+                });
+                document.getElementById("tombolCari").addEventListener("click", filterData)
             } else {
-            tabel.innerHTML = "<p>Data kosong.</p>";
+                tabel.innerHTML = "<p>Data kosong.</p>";
             }
         }).catch(error => {
             console.error(error);
@@ -239,4 +255,5 @@
         });
     </script>
 </body>
+
 </html>
