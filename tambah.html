@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banjar Kita</title>
+  <style>
+    body{
+      text-align: center;
+      align-items: center;
+      justify-items: center;
+      margin: 0;
+    }
+    .form{
+      background-color: rgb(253, 251, 251);
+      padding: 40px 80px 80px 80px;
+      margin: 9%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .form h2{
+      text-decoration: underline;
+    }
+    .form input{
+      padding: 10px;
+      border-radius: 10px;
+      margin: 8px;
+    }
+    .form button{
+      padding: 7px 75px;
+      margin-top: 20px;
+      border-radius: 10px;
+      background-color: orange;
+      transition: 0.2s;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .form button:hover{
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="form" id="formTambah">
+    <h2>Tambah Kosakata</h2>
+    <input type="text" id="bhsBanjar" placeholder="Bahasa Banjar"><br>
+    <input type="text" id="bhsIndo" placeholder="Bahasa Indonesia"><br>
+    <button id="btnKirim"><b>Kirim</b></button>
+  </div>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+    import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBVldFHqjXrGAnPeJF3EA7nad4yKBuTW1s",
+      authDomain: "proyek-akhir-1a44d.firebaseapp.com",
+      databaseURL: "https://proyek-akhir-1a44d-default-rtdb.firebaseio.com",
+      projectId: "proyek-akhir-1a44d",
+      storageBucket: "proyek-akhir-1a44d.appspot.com",
+      messagingSenderId: "495671796608",
+      appId: "1:495671796608:web:54e4fd42d38160edc35765"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    document.getElementById("btnKirim").addEventListener("click", () => {
+      const banjar = document.getElementById("bhsBanjar").value.trim();
+      const indo = document.getElementById("bhsIndo").value.trim();
+
+      if (banjar && indo) {
+        const huruf = banjar[0].toUpperCase();
+        push(ref(db, "pengajuan"), { banjar, indonesia: indo, huruf });
+        alert("Kata berhasil diajukan!");
+        document.getElementById("bhsBanjar").value = "";
+        document.getElementById("bhsIndo").value = "";
+      } else {
+        alert("Isi semua kolom!");
+      }
+    });
+  </script>
+</body>
+</html>

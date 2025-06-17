@@ -237,30 +237,6 @@ section.active-section {
     display: block;
 }
 
-.kosakata {
-    text-align: center;
-    padding: 50px;
-    background-color: white;
-    color: #1f2937;
-}
-
-.isi-kosakata {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    max-width: 1000px;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.kosakata select {
-    padding: 6px;
-    margin-left: 20px;
-    border-radius: 10px;
-}
-
 .search-container {
     margin-bottom: 15px;
     display: flex;
@@ -287,54 +263,6 @@ section.active-section {
 
 .search-button:hover {
     background-color: #45a049;
-}
-
-
-
-
-
-
-
-
-.kartu-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    /*gasan meulah kolom sebnyak mungkin, lebarnya min 220px, max 1rf*/
-    gap: 20px;
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.kartu {
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 16px;
-    text-align: center;
-    transition: transform 0.2s;
-    /*supaya ada efek animasi pas hover*/
-}
-
-.kartu:hover {
-    transform: translateY(-4px);
-    /*supaya pas kursor kekartu jadi teangkat*/
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.20);
-    /*supaya pas teangkat tdi bayanganny sedikit lebih tebal*/
-}
-
-.kartu h4 {
-    /*gasan bahasa banjar*/
-    margin: 0;
-    font-size: 18px;
-    color: #1f2937;
-}
-
-.kartu p {
-    /*gasan bahasa indonesia*/
-    margin-top: 6px;
-    font-size: 15px;
-    color: #555;
 }
 
 @keyframes fadeIn {

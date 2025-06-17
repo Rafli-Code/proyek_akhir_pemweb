@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banjar Kita</title>
+  <style>
+    body{
+      background: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+    }
+    h3{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #daftarKata{
+      max-width: 400px;
+      margin: auto;
+    }
+    .kartu{
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .kartu p{
+      margin: 0 0 10px;
+    }
+    .kartu button{
+      padding: 6px 12px;
+      border: none;
+      border-radius: 6px;
+      margin-right: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .setuju{ 
+      background-color: #4ade80; 
+      color: white;
+    }
+    .hapus{
+      background-color: #f87171; 
+      color: white;
+    }
+    .setuju:hover{
+      background-color: #07ca00;
+    }
+    .hapus:hover{
+      background-color: #fc0202;
+    }
+  </style>
+</head>
+<body>
+  <h3>Daftar Kata Yang Diajukan</h3>
+  <div id="daftarKata"></div>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+    import { getDatabase, ref, onValue, remove, set } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBVldFHqjXrGAnPeJF3EA7nad4yKBuTW1s",
+      authDomain: "proyek-akhir-1a44d.firebaseapp.com",
+      databaseURL: "https://proyek-akhir-1a44d-default-rtdb.firebaseio.com",
+      projectId: "proyek-akhir-1a44d",
+      storageBucket: "proyek-akhir-1a44d.appspot.com",
+      messagingSenderId: "495671796608",
+      appId: "1:495671796608:web:54e4fd42d38160edc35765"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    const daftarDiv = document.getElementById("daftarKata");
+
+    onValue(ref(db, "pengajuan"), snapshot => {
+      daftarDiv.innerHTML = "";
+      const data = snapshot.val();
+      if (data) {
+        Object.entries(data).forEach(([id, val]) => {
+          const div = document.createElement("div");
+          div.innerHTML = `
+            <div class="kartu">
+              <p><strong>${val.banjar}</strong> -- ${val.indonesia}</p>
+              <button class="setuju" onclick="setujui('${id}', '${val.huruf}', '${val.banjar}', '${val.indonesia}')">Setujui</button>
+              <button class="hapus" onclick="hapus('${id}')">Hapus</button>
+            </div>
+          `;
+          daftarDiv.appendChild(div);
+        });
+      } else {
+        daftarDiv.innerHTML = "<p>Tidak ada pengajuan.</p>";
+      }
+    });
+
+    window.setujui = (id, huruf, banjar, indo) => {
+      const kataRef = ref(db, `${huruf}/${banjar}`);
+      set(kataRef, indo).then(() => {
+        remove(ref(db, `pengajuan/${id}`));
+      });
+    };
+
+    window.hapus = (id) => {
+      remove(ref(db, `pengajuan/${id}`));
+    };
+  </script>
+</body>
+</html>

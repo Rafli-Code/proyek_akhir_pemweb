@@ -8,37 +8,6 @@ menuIcon.addEventListener("click", () => {
 
 
 
-
-
-
-
-fetch('kosakata.json')
-    .then(res => res.json())
-    .then(data => {
-      const pilih = document.getElementById("pilih");
-      const tabel = document.getElementById("tabelBahasa");
-
-      function tampilkan(kunci) {
-        let isi = "<div class='kartu-container'>";
-        const semuaData = kunci === "Semua"
-          ? Object.values(data).flat()
-          : data[kunci] || [];
-
-        semuaData.forEach(item => {
-          isi += `
-            <div class="kartu">
-              <h4>${item.banjar}</h4>
-              <p>${item.indonesia}</p>
-            </div>`;
-        });
-        isi += "</div>";
-        tabel.innerHTML = isi;
-      }
-
-      tampilkan("Semua"); // tampil di awal
-      pilih.addEventListener("change", e => tampilkan(e.target.value));
-    });
-
     
 
 document.addEventListener("DOMContentLoaded", function () {
