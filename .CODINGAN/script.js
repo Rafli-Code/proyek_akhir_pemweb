@@ -51,21 +51,21 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', function() {
             // Daftar lengkap kata Bahasa Banjar dan Indonesia (15 pasang)
             const allWordPairs = [
-                { banjar: "bubuhan", indonesia: "keluarga" },
+                { banjar: "larang", indonesia: "mahal" },
                 { banjar: "gawi", indonesia: "kerja" },
-                { banjar: "handak", indonesia: "ingin" },
-                { banjar: "jajak", indonesia: "jalan" },
+                { banjar: "handak", indonesia: "mau/ingin" },
+                { banjar: "ganal", indonesia: "besar" },
                 { banjar: "kada", indonesia: "tidak" },
                 { banjar: "lading", indonesia: "pisau" },
-                { banjar: "mamang", indonesia: "paman" },
-                { banjar: "nang", indonesia: "di" },
+                { banjar: "sugih", indonesia: "kaya" },
+                { banjar: "tulak", indonesia: "pergi" },
                 { banjar: "pian", indonesia: "kamu" },
-                { banjar: "sakira", indonesia: "kira-kira" },
-                { banjar: "talu", indonesia: "kalah" },
+                { banjar: "halus", indonesia: "kecil" },
+                { banjar: "dulak", indonesia: "bosan" },
                 { banjar: "ulun", indonesia: "saya" },
                 { banjar: "wadai", indonesia: "kue" },
-                { banjar: "yuyu", indonesia: "kepiting" },
-                { banjar: "jaram", indonesia: "kuda" }
+                { banjar: "abah", indonesia: "ayah" },
+                { banjar: "ading", indonesia: "adik" }
             ];
             
             // Variabel game
